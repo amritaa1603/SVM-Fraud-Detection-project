@@ -37,17 +37,13 @@ separable feature space.
 Python · scikit-learn · pandas · NumPy · matplotlib · seaborn
 
 ## Results
-
-| Configuration          | Precision | Recall | F1-Score | PR-AUC | Training Time |
-|-------------------------|-----------|--------|----------|--------|----------------|
-| Linear SVM (baseline)   | TBD       | TBD    | TBD      | TBD    | TBD            |
-| RBF SVM                 | TBD       | TBD    | TBD      | TBD    | TBD            |
-| Polynomial SVM          | TBD       | TBD    | TBD      | TBD    | TBD            |
-| Tuned RBF (GridSearchCV)| TBD       | TBD    | TBD      | TBD    | TBD            |
-| Tuned RBF (reduced features) | TBD  | TBD    | TBD      | TBD    | TBD            |
-
-*(Fill this table in with your actual numbers after running the notebook.)*
-
+|index|Configuration|Precision|Recall|F1-Score|PR-AUC|Training Time \(s\)|
+|---|---|---|---|---|---|---|
+|0|Linear SVM \(baseline\)|0\.0|0\.0|0\.0|0\.5|0\.011396408081054688|
+|1|RBF SVM|0\.9333333333333333|0\.875|0\.9032258064516129|0\.9162583487419014|0\.24170303344726562|
+|2|Polynomial SVM \(degree=3\)|0\.7894736842105263|0\.9375|0\.8571428571428571|0\.9740239845938375|0\.13407540321350098|
+|3|Tuned RBF SVM \(GridSearchCV\)|0\.8333333333333334|0\.9375|0\.8823529411764706|0\.805078438181186|138\.46695184707642|
+|4|Tuned RBF SVM \(Reduced Features\)|0\.8333333333333334|0\.9375|0\.8823529411764706|0\.805078438181186|0\.08736228942871094|
 ## How to Run
 
 1. Clone this repo
